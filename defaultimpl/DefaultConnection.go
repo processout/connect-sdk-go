@@ -145,6 +145,17 @@ func NewDefaultConnection(socketTimeout, connectTimeout, keepAliveTimeout, idleT
 	return &DefaultConnection{client, transport, nil, proxyAuth}, nil
 }
 
+// NewDefaultCustomHTTPConnectionConnection creates a new object that implements Connection, and initializes it using the custom HTTP client
+func NewDefaultCustomHTTPConnectionConnection(proxy *url.URL, httpClient *http.Client) (*DefaultConnection, error) {
+	if httpClient != nil {
+		proxyAuth := getProxyAuth(proxy)
+
+		return &DefaultConnection{*httpClient, nil, nil, proxyAuth}, nil
+	}
+
+	return nil, errors.New("unable to set up connection using custom HTTP client")
+}
+
 // Get sends a GET request to the Ingenico ePayments platform and calls the given response handler with the response.
 func (c *DefaultConnection) Get(uri url.URL, headerList []communication.Header, handler communication.ResponseHandler) (interface{}, error) {
 	return c.sendRequest("GET", uri, headerList, nil, "", handler)
