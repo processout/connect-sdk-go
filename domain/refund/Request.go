@@ -5,6 +5,8 @@ package refund
 
 import "github.com/Ingenico-ePayments/connect-sdk-go/domain/definitions"
 
+//go:generate go run ../gen-accessors.go
+
 // Request represents class RefundRequest
 type Request struct {
 	AmountOfMoney                 *definitions.AmountOfMoney     `json:"amountOfMoney,omitempty"`

@@ -13,7 +13,7 @@ const idleTimeout = 10 * time.Second
 const maxConnections = 100
 
 func TestConstructWithoutProxy(t *testing.T) {
-	connection, _ := NewDefaultConnection(socketTimeout, connectTimeout, keepAliveTimeout, idleTimeout, maxConnections, nil, nil)
+	connection, _ := NewDefaultConnection(socketTimeout, connectTimeout, keepAliveTimeout, idleTimeout, maxConnections, nil)
 	// Cannot recover connectTimeout, because it is embedded in the dial function
 
 	// Cannot recover proxy, because it is embedded in a function that is never nil, and functions also cannot be compared in go

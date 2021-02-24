@@ -3,13 +3,15 @@
 
 package payment
 
+//go:generate go run ../gen-accessors.go
+
 // ApprovalResponse represents class PaymentApprovalResponse
 type ApprovalResponse struct {
 	CardPaymentMethodSpecificOutput   *ApprovePaymentCardPaymentMethodSpecificOutput   `json:"cardPaymentMethodSpecificOutput,omitempty"`
 	MobilePaymentMethodSpecificOutput *ApprovePaymentMobilePaymentMethodSpecificOutput `json:"mobilePaymentMethodSpecificOutput,omitempty"`
 	Payment                           *Payment                                         `json:"payment,omitempty"`
 	// Deprecated: Use cardPaymentMethodSpecificOutput instead
-	PaymentMethodSpecificOutput       *ApprovePaymentCardPaymentMethodSpecificOutput   `json:"paymentMethodSpecificOutput,omitempty"`
+	PaymentMethodSpecificOutput *ApprovePaymentCardPaymentMethodSpecificOutput `json:"paymentMethodSpecificOutput,omitempty"`
 }
 
 // NewApprovalResponse constructs a new ApprovalResponse

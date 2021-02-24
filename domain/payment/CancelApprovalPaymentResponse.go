@@ -3,6 +3,8 @@
 
 package payment
 
+//go:generate go run ../gen-accessors.go
+
 // CancelApprovalPaymentResponse represents class CancelApprovalPaymentResponse
 type CancelApprovalPaymentResponse struct {
 	Payment *Payment `json:"payment,omitempty"`

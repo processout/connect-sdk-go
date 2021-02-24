@@ -3,6 +3,8 @@
 
 package dispute
 
+//go:generate go run ../gen-accessors.go
+
 // Response represents class DisputeResponse
 type Response struct {
 	DisputeOutput *Output       `json:"disputeOutput,omitempty"`

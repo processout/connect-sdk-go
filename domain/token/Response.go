@@ -3,6 +3,8 @@
 
 package token
 
+//go:generate go run ../gen-accessors.go
+
 // Response represents class TokenResponse
 type Response struct {
 	Card               *Card               `json:"card,omitempty"`

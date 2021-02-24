@@ -5,6 +5,8 @@ package definitions
 
 import "github.com/Ingenico-ePayments/connect-sdk-go/domain/errors"
 
+//go:generate go run ../gen-accessors.go
+
 // OrderStatusOutput represents class OrderStatusOutput
 type OrderStatusOutput struct {
 	Errors                   *[]errors.APIError `json:"errors,omitempty"`

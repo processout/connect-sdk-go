@@ -3,6 +3,8 @@
 
 package payment
 
+//go:generate go run ../gen-accessors.go
+
 // CreateResponse represents class CreatePaymentResponse
 type CreateResponse struct {
 	CreationOutput *CreationOutput `json:"creationOutput,omitempty"`

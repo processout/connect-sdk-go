@@ -3,6 +3,8 @@
 
 package definitions
 
+//go:generate go run ../gen-accessors.go
+
 // CardFraudResults represents class CardFraudResults
 type CardFraudResults struct {
 	AvsResult          *string                      `json:"avsResult,omitempty"`

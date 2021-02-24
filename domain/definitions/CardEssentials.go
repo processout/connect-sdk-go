@@ -3,6 +3,8 @@
 
 package definitions
 
+//go:generate go run ../gen-accessors.go
+
 // CardEssentials represents class CardEssentials
 type CardEssentials struct {
 	CardNumber *string `json:"cardNumber,omitempty"`

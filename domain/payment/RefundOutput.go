@@ -5,6 +5,8 @@ package payment
 
 import "github.com/Ingenico-ePayments/connect-sdk-go/domain/definitions"
 
+//go:generate go run ../gen-accessors.go
+
 // RefundOutput represents class RefundOutput
 type RefundOutput struct {
 	AmountOfMoney                      *definitions.AmountOfMoney          `json:"amountOfMoney,omitempty"`
