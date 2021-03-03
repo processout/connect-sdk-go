@@ -6,7 +6,7 @@ package products
 import (
 	"strconv"
 
-	"github.com/Ingenico-ePayments/connect-sdk-go/communicator"
+	"github.com/processout/connect-sdk-go/communicator"
 )
 
 // GetParams represents query parameters for Get payment product

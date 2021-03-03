@@ -3,7 +3,7 @@ package errors
 import (
 	"strconv"
 
-	"github.com/Ingenico-ePayments/connect-sdk-go/domain/errors"
+	"github.com/processout/connect-sdk-go/domain/errors"
 )
 
 // GlobalCollectError represents an error response from the Ingenico ePayments platform when something went wrong at the Ingenico ePayments platform or further downstream.

@@ -3,11 +3,11 @@ package errors
 import (
 	"net/http"
 
-	"github.com/Ingenico-ePayments/connect-sdk-go/communicator/communication"
-	apiErrors "github.com/Ingenico-ePayments/connect-sdk-go/domain/errors"
-	"github.com/Ingenico-ePayments/connect-sdk-go/domain/payment"
-	"github.com/Ingenico-ePayments/connect-sdk-go/domain/payout"
-	"github.com/Ingenico-ePayments/connect-sdk-go/domain/refund"
+	"github.com/processout/connect-sdk-go/communicator/communication"
+	apiErrors "github.com/processout/connect-sdk-go/domain/errors"
+	"github.com/processout/connect-sdk-go/domain/payment"
+	"github.com/processout/connect-sdk-go/domain/payout"
+	"github.com/processout/connect-sdk-go/domain/refund"
 )
 
 // CreateAPIError is used internally in order to create an API error after an HTTP request is done

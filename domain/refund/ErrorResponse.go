@@ -3,7 +3,7 @@
 
 package refund
 
-import "github.com/Ingenico-ePayments/connect-sdk-go/domain/errors"
+import "github.com/processout/connect-sdk-go/domain/errors"
 
 //go:generate go run ../gen-accessors.go
 

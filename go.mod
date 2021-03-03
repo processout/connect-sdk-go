@@ -1,3 +1,3 @@
-module github.com/Ingenico-ePayments/connect-sdk-go
+module github.com/processout/connect-sdk-go
 
 go 1.15

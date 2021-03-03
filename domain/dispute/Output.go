@@ -4,8 +4,8 @@
 package dispute
 
 import (
-	"github.com/Ingenico-ePayments/connect-sdk-go/domain/definitions"
-	"github.com/Ingenico-ePayments/connect-sdk-go/domain/file"
+	"github.com/processout/connect-sdk-go/domain/definitions"
+	"github.com/processout/connect-sdk-go/domain/file"
 )
 
 // Output represents class DisputeOutput

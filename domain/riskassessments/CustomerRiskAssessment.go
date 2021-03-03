@@ -4,8 +4,8 @@
 package riskassessments
 
 import (
-	"github.com/Ingenico-ePayments/connect-sdk-go/domain/definitions"
-	"github.com/Ingenico-ePayments/connect-sdk-go/domain/payment"
+	"github.com/processout/connect-sdk-go/domain/definitions"
+	"github.com/processout/connect-sdk-go/domain/payment"
 )
 
 // CustomerRiskAssessment represents class CustomerRiskAssessment
@@ -19,7 +19,7 @@ type CustomerRiskAssessment struct {
 	Locale              *string                            `json:"locale,omitempty"`
 	PersonalInformation *PersonalInformationRiskAssessment `json:"personalInformation,omitempty"`
 	// Deprecated: Use Order.shipping.address instead
-	ShippingAddress     *payment.AddressPersonal           `json:"shippingAddress,omitempty"`
+	ShippingAddress *payment.AddressPersonal `json:"shippingAddress,omitempty"`
 }
 
 // NewCustomerRiskAssessment constructs a new CustomerRiskAssessment

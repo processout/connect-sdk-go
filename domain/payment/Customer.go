@@ -3,7 +3,7 @@
 
 package payment
 
-import "github.com/Ingenico-ePayments/connect-sdk-go/domain/definitions"
+import "github.com/processout/connect-sdk-go/domain/definitions"
 
 // Customer represents class Customer
 type Customer struct {
@@ -19,9 +19,9 @@ type Customer struct {
 	MerchantCustomerID  *string                         `json:"merchantCustomerId,omitempty"`
 	PersonalInformation *PersonalInformation            `json:"personalInformation,omitempty"`
 	// Deprecated: Use Order.shipping.address instead
-	ShippingAddress     *AddressPersonal                `json:"shippingAddress,omitempty"`
+	ShippingAddress *AddressPersonal `json:"shippingAddress,omitempty"`
 	// Deprecated: Use companyInformation.vatNumber instead
-	VatNumber           *string                         `json:"vatNumber,omitempty"`
+	VatNumber *string `json:"vatNumber,omitempty"`
 }
 
 // NewCustomer constructs a new Customer

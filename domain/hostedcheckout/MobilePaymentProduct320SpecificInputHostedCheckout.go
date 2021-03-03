@@ -3,7 +3,7 @@
 
 package hostedcheckout
 
-import "github.com/Ingenico-ePayments/connect-sdk-go/domain/payment"
+import "github.com/processout/connect-sdk-go/domain/payment"
 
 // MobilePaymentProduct320SpecificInputHostedCheckout represents class MobilePaymentProduct320SpecificInputHostedCheckout
 type MobilePaymentProduct320SpecificInputHostedCheckout struct {

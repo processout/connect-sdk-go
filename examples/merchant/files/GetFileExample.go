@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/Ingenico-ePayments/connect-sdk-go/communicator"
-	"github.com/Ingenico-ePayments/connect-sdk-go/communicator/communication"
+	"github.com/processout/connect-sdk-go/communicator"
+	"github.com/processout/connect-sdk-go/communicator/communication"
 )
 
 func getFileExample() {

@@ -6,8 +6,8 @@ package examples
 import (
 	"fmt"
 
-	"github.com/Ingenico-ePayments/connect-sdk-go/domain/definitions"
-	"github.com/Ingenico-ePayments/connect-sdk-go/domain/product"
+	"github.com/processout/connect-sdk-go/domain/definitions"
+	"github.com/processout/connect-sdk-go/domain/product"
 )
 
 func getCustomerDetailsExample() {

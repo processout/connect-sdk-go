@@ -3,7 +3,7 @@
 
 package payout
 
-import "github.com/Ingenico-ePayments/connect-sdk-go/domain/definitions"
+import "github.com/processout/connect-sdk-go/domain/definitions"
 
 // CardPayoutMethodSpecificInput represents class CardPayoutMethodSpecificInput
 type CardPayoutMethodSpecificInput struct {

@@ -1,6 +1,6 @@
 package communicator
 
-import "github.com/Ingenico-ePayments/connect-sdk-go/communicator/communication"
+import "github.com/processout/connect-sdk-go/communicator/communication"
 
 // MultipartFormDataRequest represents a multipart/form-data request.
 type MultipartFormDataRequest interface {

@@ -3,7 +3,7 @@
 
 package hostedcheckout
 
-import "github.com/Ingenico-ePayments/connect-sdk-go/domain/payment"
+import "github.com/processout/connect-sdk-go/domain/payment"
 
 // CreatedPaymentOutput represents class CreatedPaymentOutput
 type CreatedPaymentOutput struct {
@@ -11,9 +11,9 @@ type CreatedPaymentOutput struct {
 	Payment                   *payment.Payment            `json:"payment,omitempty"`
 	PaymentCreationReferences *payment.CreationReferences `json:"paymentCreationReferences,omitempty"`
 	// Deprecated: Use Payment.statusOutput.statusCategory instead
-	PaymentStatusCategory     *string                     `json:"paymentStatusCategory,omitempty"`
-	TokenizationSucceeded     *bool                       `json:"tokenizationSucceeded,omitempty"`
-	Tokens                    *string                     `json:"tokens,omitempty"`
+	PaymentStatusCategory *string `json:"paymentStatusCategory,omitempty"`
+	TokenizationSucceeded *bool   `json:"tokenizationSucceeded,omitempty"`
+	Tokens                *string `json:"tokens,omitempty"`
 }
 
 // NewCreatedPaymentOutput constructs a new CreatedPaymentOutput

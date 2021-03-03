@@ -3,7 +3,7 @@
 
 package payment
 
-import "github.com/Ingenico-ePayments/connect-sdk-go/domain/errors"
+import "github.com/processout/connect-sdk-go/domain/errors"
 
 // StatusOutput represents class PaymentStatusOutput
 type StatusOutput struct {

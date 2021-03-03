@@ -6,12 +6,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Ingenico-ePayments/connect-sdk-go/communicator"
-	"github.com/Ingenico-ePayments/connect-sdk-go/communicator/communication"
-	"github.com/Ingenico-ePayments/connect-sdk-go/defaultimpl"
-	"github.com/Ingenico-ePayments/connect-sdk-go/domain/payment"
-	"github.com/Ingenico-ePayments/connect-sdk-go/errors"
-	"github.com/Ingenico-ePayments/connect-sdk-go/logging"
+	"github.com/processout/connect-sdk-go/communicator"
+	"github.com/processout/connect-sdk-go/communicator/communication"
+	"github.com/processout/connect-sdk-go/defaultimpl"
+	"github.com/processout/connect-sdk-go/domain/payment"
+	"github.com/processout/connect-sdk-go/errors"
+	"github.com/processout/connect-sdk-go/logging"
 )
 
 func CheckSuccess(cv *TestConnection, resp payment.CreateResponse, err error) string {

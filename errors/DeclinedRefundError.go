@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/Ingenico-ePayments/connect-sdk-go/domain/errors"
-	"github.com/Ingenico-ePayments/connect-sdk-go/domain/refund"
+	"github.com/processout/connect-sdk-go/domain/errors"
+	"github.com/processout/connect-sdk-go/domain/refund"
 )
 
 // DeclinedRefundError represents an error response from a refund call

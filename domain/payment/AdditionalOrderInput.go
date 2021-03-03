@@ -3,20 +3,20 @@
 
 package payment
 
-import "github.com/Ingenico-ePayments/connect-sdk-go/domain/definitions"
+import "github.com/processout/connect-sdk-go/domain/definitions"
 
 // AdditionalOrderInput represents class AdditionalOrderInput
 type AdditionalOrderInput struct {
-	AirlineData          *definitions.AirlineData `json:"airlineData,omitempty"`
-	Installments         *Installments            `json:"installments,omitempty"`
+	AirlineData  *definitions.AirlineData `json:"airlineData,omitempty"`
+	Installments *Installments            `json:"installments,omitempty"`
 	// Deprecated: Use Order.shoppingCart.amountBreakdown instead
-	Level3SummaryData    *Level3SummaryData       `json:"level3SummaryData,omitempty"`
-	LoanRecipient        *LoanRecipient           `json:"loanRecipient,omitempty"`
-	LodgingData          *definitions.LodgingData `json:"lodgingData,omitempty"`
+	Level3SummaryData *Level3SummaryData       `json:"level3SummaryData,omitempty"`
+	LoanRecipient     *LoanRecipient           `json:"loanRecipient,omitempty"`
+	LodgingData       *definitions.LodgingData `json:"lodgingData,omitempty"`
 	// Deprecated: Use installments.numberOfInstallments instead
-	NumberOfInstallments *int64                   `json:"numberOfInstallments,omitempty"`
-	OrderDate            *string                  `json:"orderDate,omitempty"`
-	TypeInformation      *OrderTypeInformation    `json:"typeInformation,omitempty"`
+	NumberOfInstallments *int64                `json:"numberOfInstallments,omitempty"`
+	OrderDate            *string               `json:"orderDate,omitempty"`
+	TypeInformation      *OrderTypeInformation `json:"typeInformation,omitempty"`
 }
 
 // NewAdditionalOrderInput constructs a new AdditionalOrderInput

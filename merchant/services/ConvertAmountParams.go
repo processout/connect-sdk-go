@@ -6,7 +6,7 @@ package services
 import (
 	"strconv"
 
-	"github.com/Ingenico-ePayments/connect-sdk-go/communicator"
+	"github.com/processout/connect-sdk-go/communicator"
 )
 
 // ConvertAmountParams represents query parameters for Convert amount

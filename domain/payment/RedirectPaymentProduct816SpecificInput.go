@@ -3,7 +3,7 @@
 
 package payment
 
-import "github.com/Ingenico-ePayments/connect-sdk-go/domain/definitions"
+import "github.com/processout/connect-sdk-go/domain/definitions"
 
 // RedirectPaymentProduct816SpecificInput represents class RedirectPaymentProduct816SpecificInput
 type RedirectPaymentProduct816SpecificInput struct {

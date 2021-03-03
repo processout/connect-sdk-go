@@ -3,7 +3,7 @@ package communicator
 import (
 	"testing"
 
-	"github.com/Ingenico-ePayments/connect-sdk-go/communicator/communication"
+	"github.com/processout/connect-sdk-go/communicator/communication"
 )
 
 type Parameter struct {

@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/Ingenico-ePayments/connect-sdk-go/communicator/communication"
-	"github.com/Ingenico-ePayments/connect-sdk-go/merchant/disputes"
+	"github.com/processout/connect-sdk-go/communicator/communication"
+	"github.com/processout/connect-sdk-go/merchant/disputes"
 )
 
 func uploadDisputeFileExample() {

@@ -4,8 +4,8 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/Ingenico-ePayments/connect-sdk-go/communicator/communication"
-	"github.com/Ingenico-ePayments/connect-sdk-go/logging"
+	"github.com/processout/connect-sdk-go/communicator/communication"
+	"github.com/processout/connect-sdk-go/logging"
 )
 
 // Connection represents a pooled connection to the Ingenico ePayments platform server.

@@ -3,7 +3,7 @@ package products
 import (
 	"testing"
 
-	"github.com/Ingenico-ePayments/connect-sdk-go/communicator"
+	"github.com/processout/connect-sdk-go/communicator"
 )
 
 func TestGetParamsToRequestParameters(t *testing.T) {

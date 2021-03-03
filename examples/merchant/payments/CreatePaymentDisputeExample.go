@@ -6,8 +6,8 @@ package examples
 import (
 	"fmt"
 
-	"github.com/Ingenico-ePayments/connect-sdk-go/domain/definitions"
-	"github.com/Ingenico-ePayments/connect-sdk-go/domain/dispute"
+	"github.com/processout/connect-sdk-go/domain/definitions"
+	"github.com/processout/connect-sdk-go/domain/dispute"
 )
 
 func createPaymentDisputeExample() {

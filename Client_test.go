@@ -5,8 +5,8 @@ import (
 	"net/url"
 	"testing"
 
-	"github.com/Ingenico-ePayments/connect-sdk-go/configuration"
-	"github.com/Ingenico-ePayments/connect-sdk-go/defaultimpl"
+	"github.com/processout/connect-sdk-go/configuration"
+	"github.com/processout/connect-sdk-go/defaultimpl"
 )
 
 var testConfiguration = configuration.CommunicatorConfiguration{

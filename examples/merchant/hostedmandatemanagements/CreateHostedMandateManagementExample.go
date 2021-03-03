@@ -6,7 +6,7 @@ package examples
 import (
 	"fmt"
 
-	"github.com/Ingenico-ePayments/connect-sdk-go/domain/hostedmandatemanagement"
+	"github.com/processout/connect-sdk-go/domain/hostedmandatemanagement"
 )
 
 func createHostedMandateManagementExample() {

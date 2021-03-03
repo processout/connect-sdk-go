@@ -3,7 +3,7 @@ package errors
 import (
 	"strconv"
 
-	"github.com/Ingenico-ePayments/connect-sdk-go/domain/errors"
+	"github.com/processout/connect-sdk-go/domain/errors"
 )
 
 // AuthorizationError represents an error response from the Ingenico ePayments platform when authorization failed.

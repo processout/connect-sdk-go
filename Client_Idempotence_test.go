@@ -11,11 +11,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Ingenico-ePayments/connect-sdk-go/communicator"
-	"github.com/Ingenico-ePayments/connect-sdk-go/defaultimpl"
-	"github.com/Ingenico-ePayments/connect-sdk-go/domain/definitions"
-	"github.com/Ingenico-ePayments/connect-sdk-go/domain/payment"
-	sdkErrors "github.com/Ingenico-ePayments/connect-sdk-go/errors"
+	"github.com/processout/connect-sdk-go/communicator"
+	"github.com/processout/connect-sdk-go/defaultimpl"
+	"github.com/processout/connect-sdk-go/domain/definitions"
+	"github.com/processout/connect-sdk-go/domain/payment"
+	sdkErrors "github.com/processout/connect-sdk-go/errors"
 )
 
 var idempotenceSuccessJSON = `{
@@ -289,7 +289,7 @@ func createTestEnvironment(path string, handleFunc http.HandlerFunc) (net.Listen
 		Handler: mux,
 	}
 
-	randomPort := (1 << 12) + rand.Intn(1 << 15)
+	randomPort := (1 << 12) + rand.Intn(1<<15)
 	listener, err := net.Listen("tcp", ":"+strconv.Itoa(randomPort))
 	if err != nil {
 		return nil, nil, nil, err

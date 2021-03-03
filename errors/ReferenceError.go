@@ -3,7 +3,7 @@ package errors
 import (
 	"strconv"
 
-	"github.com/Ingenico-ePayments/connect-sdk-go/domain/errors"
+	"github.com/processout/connect-sdk-go/domain/errors"
 )
 
 // ReferenceError represents an error response from the Ingenico ePayments platform when a non-existing or removed object is trying to be accessed.

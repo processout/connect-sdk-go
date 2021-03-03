@@ -1,10 +1,11 @@
 package connectsdk
 
 import (
-	"github.com/Ingenico-ePayments/connect-sdk-go/communicator"
-	"github.com/Ingenico-ePayments/connect-sdk-go/configuration"
-	"github.com/Ingenico-ePayments/connect-sdk-go/defaultimpl"
 	"net/http"
+
+	"github.com/processout/connect-sdk-go/communicator"
+	"github.com/processout/connect-sdk-go/configuration"
+	"github.com/processout/connect-sdk-go/defaultimpl"
 )
 
 // CreateConfiguration creates a CommunicatorConfiguration with default settings and the given apiKeyID and secretAPIKey

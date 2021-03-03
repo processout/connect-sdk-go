@@ -3,7 +3,7 @@ package communicator
 import (
 	"net/url"
 
-	"github.com/Ingenico-ePayments/connect-sdk-go/communicator/communication"
+	"github.com/processout/connect-sdk-go/communicator/communication"
 )
 
 // Authenticator is the interface used to sign requests to the Ingenico ePayments platform. Thread-safe.

@@ -5,9 +5,9 @@ import (
 	"errors"
 	"runtime"
 
-	"github.com/Ingenico-ePayments/connect-sdk-go/communicator/communication"
-	"github.com/Ingenico-ePayments/connect-sdk-go/defaultimpl"
-	"github.com/Ingenico-ePayments/connect-sdk-go/domain/metadata"
+	"github.com/processout/connect-sdk-go/communicator/communication"
+	"github.com/processout/connect-sdk-go/defaultimpl"
+	"github.com/processout/connect-sdk-go/domain/metadata"
 )
 
 var (

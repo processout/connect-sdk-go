@@ -11,7 +11,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/Ingenico-ePayments/connect-sdk-go/communicator/communication"
+	"github.com/processout/connect-sdk-go/communicator/communication"
 )
 
 // AuthorizationType represents the type of authentication that is used. Here only v1HMAC

@@ -4,8 +4,8 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/Ingenico-ePayments/connect-sdk-go/defaultimpl"
-	"github.com/Ingenico-ePayments/connect-sdk-go/domain/metadata"
+	"github.com/processout/connect-sdk-go/defaultimpl"
+	"github.com/processout/connect-sdk-go/domain/metadata"
 )
 
 // CommunicatorConfiguration represents the configuration to be used by a Communicator

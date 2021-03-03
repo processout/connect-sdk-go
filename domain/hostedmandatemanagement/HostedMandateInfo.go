@@ -3,7 +3,7 @@
 
 package hostedmandatemanagement
 
-import "github.com/Ingenico-ePayments/connect-sdk-go/domain/mandates"
+import "github.com/processout/connect-sdk-go/domain/mandates"
 
 // HostedMandateInfo represents class HostedMandateInfo
 type HostedMandateInfo struct {

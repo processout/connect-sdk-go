@@ -1,8 +1,9 @@
 package webhooks
 
 import (
-	"github.com/Ingenico-ePayments/connect-sdk-go/defaultimpl"
 	"testing"
+
+	"github.com/processout/connect-sdk-go/defaultimpl"
 )
 
 func TestCreateHelper(t *testing.T) {

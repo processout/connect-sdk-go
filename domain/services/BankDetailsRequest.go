@@ -3,7 +3,7 @@
 
 package services
 
-import "github.com/Ingenico-ePayments/connect-sdk-go/domain/definitions"
+import "github.com/processout/connect-sdk-go/domain/definitions"
 
 // BankDetailsRequest represents class BankDetailsRequest
 type BankDetailsRequest struct {

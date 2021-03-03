@@ -3,7 +3,7 @@
 
 package hostedcheckout
 
-import "github.com/Ingenico-ePayments/connect-sdk-go/domain/definitions"
+import "github.com/processout/connect-sdk-go/domain/definitions"
 
 // DisplayedData represents class DisplayedData
 type DisplayedData struct {

@@ -3,7 +3,7 @@
 
 package riskassessments
 
-import "github.com/Ingenico-ePayments/connect-sdk-go/domain/definitions"
+import "github.com/processout/connect-sdk-go/domain/definitions"
 
 // RiskAssessmentBankAccount represents class RiskAssessmentBankAccount
 type RiskAssessmentBankAccount struct {

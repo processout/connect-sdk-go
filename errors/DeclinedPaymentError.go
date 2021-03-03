@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/Ingenico-ePayments/connect-sdk-go/domain/errors"
-	"github.com/Ingenico-ePayments/connect-sdk-go/domain/payment"
+	"github.com/processout/connect-sdk-go/domain/errors"
+	"github.com/processout/connect-sdk-go/domain/payment"
 )
 
 // DeclinedPaymentError represents an error response from a create payment call

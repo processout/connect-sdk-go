@@ -4,22 +4,22 @@
 package merchant
 
 import (
-	"github.com/Ingenico-ePayments/connect-sdk-go/internal/apiresource"
-	"github.com/Ingenico-ePayments/connect-sdk-go/merchant/captures"
-	"github.com/Ingenico-ePayments/connect-sdk-go/merchant/disputes"
-	"github.com/Ingenico-ePayments/connect-sdk-go/merchant/files"
-	"github.com/Ingenico-ePayments/connect-sdk-go/merchant/hostedcheckouts"
-	"github.com/Ingenico-ePayments/connect-sdk-go/merchant/hostedmandatemanagements"
-	"github.com/Ingenico-ePayments/connect-sdk-go/merchant/mandates"
-	"github.com/Ingenico-ePayments/connect-sdk-go/merchant/payments"
-	"github.com/Ingenico-ePayments/connect-sdk-go/merchant/payouts"
-	"github.com/Ingenico-ePayments/connect-sdk-go/merchant/productgroups"
-	"github.com/Ingenico-ePayments/connect-sdk-go/merchant/products"
-	"github.com/Ingenico-ePayments/connect-sdk-go/merchant/refunds"
-	"github.com/Ingenico-ePayments/connect-sdk-go/merchant/riskassessments"
-	"github.com/Ingenico-ePayments/connect-sdk-go/merchant/services"
-	"github.com/Ingenico-ePayments/connect-sdk-go/merchant/sessions"
-	"github.com/Ingenico-ePayments/connect-sdk-go/merchant/tokens"
+	"github.com/processout/connect-sdk-go/internal/apiresource"
+	"github.com/processout/connect-sdk-go/merchant/captures"
+	"github.com/processout/connect-sdk-go/merchant/disputes"
+	"github.com/processout/connect-sdk-go/merchant/files"
+	"github.com/processout/connect-sdk-go/merchant/hostedcheckouts"
+	"github.com/processout/connect-sdk-go/merchant/hostedmandatemanagements"
+	"github.com/processout/connect-sdk-go/merchant/mandates"
+	"github.com/processout/connect-sdk-go/merchant/payments"
+	"github.com/processout/connect-sdk-go/merchant/payouts"
+	"github.com/processout/connect-sdk-go/merchant/productgroups"
+	"github.com/processout/connect-sdk-go/merchant/products"
+	"github.com/processout/connect-sdk-go/merchant/refunds"
+	"github.com/processout/connect-sdk-go/merchant/riskassessments"
+	"github.com/processout/connect-sdk-go/merchant/services"
+	"github.com/processout/connect-sdk-go/merchant/sessions"
+	"github.com/processout/connect-sdk-go/merchant/tokens"
 )
 
 // Client represents a merchant client. Thread-safe.

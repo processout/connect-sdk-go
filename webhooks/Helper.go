@@ -8,10 +8,10 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/Ingenico-ePayments/connect-sdk-go"
-	"github.com/Ingenico-ePayments/connect-sdk-go/communicator"
-	"github.com/Ingenico-ePayments/connect-sdk-go/communicator/communication"
-	"github.com/Ingenico-ePayments/connect-sdk-go/domain/webhooks"
+	connectsdk "github.com/processout/connect-sdk-go"
+	"github.com/processout/connect-sdk-go/communicator"
+	"github.com/processout/connect-sdk-go/communicator/communication"
+	"github.com/processout/connect-sdk-go/domain/webhooks"
 )
 
 var (

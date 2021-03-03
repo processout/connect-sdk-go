@@ -6,7 +6,7 @@ package examples
 import (
 	"fmt"
 
-	"github.com/Ingenico-ePayments/connect-sdk-go/merchant/payments"
+	"github.com/processout/connect-sdk-go/merchant/payments"
 )
 
 func findPaymentsExample() {

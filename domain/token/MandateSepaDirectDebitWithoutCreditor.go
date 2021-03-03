@@ -3,7 +3,7 @@
 
 package token
 
-import "github.com/Ingenico-ePayments/connect-sdk-go/domain/definitions"
+import "github.com/processout/connect-sdk-go/domain/definitions"
 
 // MandateSepaDirectDebitWithoutCreditor represents class MandateSepaDirectDebitWithoutCreditor
 type MandateSepaDirectDebitWithoutCreditor struct {

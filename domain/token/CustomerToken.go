@@ -3,7 +3,7 @@
 
 package token
 
-import "github.com/Ingenico-ePayments/connect-sdk-go/domain/definitions"
+import "github.com/processout/connect-sdk-go/domain/definitions"
 
 // CustomerToken represents class CustomerToken
 type CustomerToken struct {
@@ -12,7 +12,7 @@ type CustomerToken struct {
 	MerchantCustomerID  *string                         `json:"merchantCustomerId,omitempty"`
 	PersonalInformation *PersonalInformationToken       `json:"personalInformation,omitempty"`
 	// Deprecated: Use companyInformation.vatNumber instead
-	VatNumber           *string                         `json:"vatNumber,omitempty"`
+	VatNumber *string `json:"vatNumber,omitempty"`
 }
 
 // NewCustomerToken constructs a new CustomerToken

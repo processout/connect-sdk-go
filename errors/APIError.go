@@ -1,6 +1,6 @@
 package errors
 
-import "github.com/Ingenico-ePayments/connect-sdk-go/domain/errors"
+import "github.com/processout/connect-sdk-go/domain/errors"
 
 // APIError represents an error response from the Ingenico ePayments platform which contains an ID and a list of errors.
 type APIError interface {

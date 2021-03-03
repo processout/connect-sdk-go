@@ -3,7 +3,7 @@
 
 package disputes
 
-import "github.com/Ingenico-ePayments/connect-sdk-go/communicator/communication"
+import "github.com/processout/connect-sdk-go/communicator/communication"
 
 // UploadFileRequest represents multipart/form-data parameters for Upload File
 // Documentation can be found at https://epayments-api.developer-ingenico.com/fileserviceapi/v1/en_US/go/disputes/uploadFile.html

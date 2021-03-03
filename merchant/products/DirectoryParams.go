@@ -3,7 +3,7 @@
 
 package products
 
-import "github.com/Ingenico-ePayments/connect-sdk-go/communicator"
+import "github.com/processout/connect-sdk-go/communicator"
 
 // DirectoryParams represents query parameters for Get payment product directory
 // Documentation can be found at https://epayments-api.developer-ingenico.com/s2sapi/v1/en_US/go/products/directory.html

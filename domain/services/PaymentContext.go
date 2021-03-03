@@ -3,7 +3,7 @@
 
 package services
 
-import "github.com/Ingenico-ePayments/connect-sdk-go/domain/definitions"
+import "github.com/processout/connect-sdk-go/domain/definitions"
 
 // PaymentContext represents class PaymentContext
 type PaymentContext struct {

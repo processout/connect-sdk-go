@@ -3,7 +3,7 @@
 
 package payout
 
-import "github.com/Ingenico-ePayments/connect-sdk-go/domain/errors"
+import "github.com/processout/connect-sdk-go/domain/errors"
 
 // ErrorResponse represents class PayoutErrorResponse
 type ErrorResponse struct {

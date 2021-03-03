@@ -5,7 +5,7 @@ import (
 	"net/url"
 	"testing"
 
-	"github.com/Ingenico-ePayments/connect-sdk-go/communicator/communication"
+	"github.com/processout/connect-sdk-go/communicator/communication"
 )
 
 func TestToCanonicalizedHeaderValue(t *testing.T) {

@@ -4,8 +4,8 @@ import (
 	"errors"
 	"strings"
 
-	"github.com/Ingenico-ePayments/connect-sdk-go/communicator"
-	"github.com/Ingenico-ePayments/connect-sdk-go/communicator/communication"
+	"github.com/processout/connect-sdk-go/communicator"
+	"github.com/processout/connect-sdk-go/communicator/communication"
 )
 
 // ErrNilParent occurs when the parent is nil
@@ -106,7 +106,7 @@ func NewAPIResource(communicator *communicator.Communicator, clientMetaInfo stri
 func replaceAll(uri string, pathContext map[string]string) string {
 	if pathContext != nil {
 		for key, value := range pathContext {
-			uri = strings.Replace(uri, "{" + key + "}", value, -1)
+			uri = strings.Replace(uri, "{"+key+"}", value, -1)
 		}
 	}
 

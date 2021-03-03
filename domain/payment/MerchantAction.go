@@ -4,8 +4,8 @@
 package payment
 
 import (
-	"github.com/Ingenico-ePayments/connect-sdk-go/domain/definitions"
-	"github.com/Ingenico-ePayments/connect-sdk-go/domain/product"
+	"github.com/processout/connect-sdk-go/domain/definitions"
+	"github.com/processout/connect-sdk-go/domain/product"
 )
 
 // MerchantAction represents class MerchantAction

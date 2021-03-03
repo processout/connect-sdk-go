@@ -4,11 +4,11 @@
 package examples
 
 import (
-	"github.com/Ingenico-ePayments/connect-sdk-go"
-	"github.com/Ingenico-ePayments/connect-sdk-go/domain/errors"
-	"github.com/Ingenico-ePayments/connect-sdk-go/domain/payment"
-	"github.com/Ingenico-ePayments/connect-sdk-go/domain/payout"
-	"github.com/Ingenico-ePayments/connect-sdk-go/domain/refund"
+	connectsdk "github.com/processout/connect-sdk-go"
+	"github.com/processout/connect-sdk-go/domain/errors"
+	"github.com/processout/connect-sdk-go/domain/payment"
+	"github.com/processout/connect-sdk-go/domain/payout"
+	"github.com/processout/connect-sdk-go/domain/refund"
 )
 
 func getClient() (*connectsdk.Client, error) {

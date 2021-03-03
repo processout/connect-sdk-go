@@ -3,7 +3,7 @@
 
 package sessions
 
-import "github.com/Ingenico-ePayments/connect-sdk-go/domain/definitions"
+import "github.com/processout/connect-sdk-go/domain/definitions"
 
 // PaymentProductFiltersClientSession represents class PaymentProductFiltersClientSession
 type PaymentProductFiltersClientSession struct {

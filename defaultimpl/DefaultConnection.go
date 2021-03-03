@@ -17,9 +17,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Ingenico-ePayments/connect-sdk-go/communicator/communication"
-	sdkErrors "github.com/Ingenico-ePayments/connect-sdk-go/errors"
-	"github.com/Ingenico-ePayments/connect-sdk-go/logging"
+	"github.com/processout/connect-sdk-go/communicator/communication"
+	sdkErrors "github.com/processout/connect-sdk-go/errors"
+	"github.com/processout/connect-sdk-go/logging"
 )
 
 // DefaultConnection is the default implementation for the connection interface. Supports Pooling, and is thread safe.

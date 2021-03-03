@@ -3,7 +3,7 @@
 
 package riskassessments
 
-import "github.com/Ingenico-ePayments/connect-sdk-go/domain/payment"
+import "github.com/processout/connect-sdk-go/domain/payment"
 
 // ShippingRiskAssessment represents class ShippingRiskAssessment
 type ShippingRiskAssessment struct {

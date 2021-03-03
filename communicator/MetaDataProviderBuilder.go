@@ -1,8 +1,8 @@
 package communicator
 
 import (
-	"github.com/Ingenico-ePayments/connect-sdk-go/communicator/communication"
-	"github.com/Ingenico-ePayments/connect-sdk-go/domain/metadata"
+	"github.com/processout/connect-sdk-go/communicator/communication"
+	"github.com/processout/connect-sdk-go/domain/metadata"
 )
 
 // MetaDataProviderBuilder represents a builder for a MetaDataProvider object.

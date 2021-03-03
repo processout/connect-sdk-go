@@ -1,11 +1,11 @@
 package webhooks
 
 import (
-	"github.com/Ingenico-ePayments/connect-sdk-go/domain/dispute"
-	"github.com/Ingenico-ePayments/connect-sdk-go/domain/payment"
-	"github.com/Ingenico-ePayments/connect-sdk-go/domain/payout"
-	"github.com/Ingenico-ePayments/connect-sdk-go/domain/refund"
-	"github.com/Ingenico-ePayments/connect-sdk-go/domain/token"
+	"github.com/processout/connect-sdk-go/domain/dispute"
+	"github.com/processout/connect-sdk-go/domain/payment"
+	"github.com/processout/connect-sdk-go/domain/payout"
+	"github.com/processout/connect-sdk-go/domain/refund"
+	"github.com/processout/connect-sdk-go/domain/token"
 )
 
 //go:generate go run ../gen-accessors.go

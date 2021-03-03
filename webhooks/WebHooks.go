@@ -1,6 +1,6 @@
 package webhooks
 
-import "github.com/Ingenico-ePayments/connect-sdk-go/defaultimpl"
+import "github.com/processout/connect-sdk-go/defaultimpl"
 
 // CreateHelperBuilder creates a HelperBuilder that will use the given secretKeyStore
 func CreateHelperBuilder(secretKeyStore SecretKeyStore) (*HelperBuilder, error) {

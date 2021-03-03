@@ -3,7 +3,7 @@
 
 package token
 
-import "github.com/Ingenico-ePayments/connect-sdk-go/domain/definitions"
+import "github.com/processout/connect-sdk-go/domain/definitions"
 
 // NonSepaDirectDebitPaymentProduct730SpecificData represents class TokenNonSepaDirectDebitPaymentProduct730SpecificData
 type NonSepaDirectDebitPaymentProduct730SpecificData struct {

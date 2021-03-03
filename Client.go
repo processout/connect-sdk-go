@@ -6,10 +6,10 @@ package connectsdk
 import (
 	"encoding/base64"
 
-	"github.com/Ingenico-ePayments/connect-sdk-go/communicator"
-	"github.com/Ingenico-ePayments/connect-sdk-go/internal/apiresource"
-	"github.com/Ingenico-ePayments/connect-sdk-go/logging"
-	"github.com/Ingenico-ePayments/connect-sdk-go/merchant"
+	"github.com/processout/connect-sdk-go/communicator"
+	"github.com/processout/connect-sdk-go/internal/apiresource"
+	"github.com/processout/connect-sdk-go/logging"
+	"github.com/processout/connect-sdk-go/merchant"
 )
 
 // APIVersion is the version of the current SDK

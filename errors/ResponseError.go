@@ -3,7 +3,7 @@ package errors
 import (
 	"strconv"
 
-	"github.com/Ingenico-ePayments/connect-sdk-go/communicator/communication"
+	"github.com/processout/connect-sdk-go/communicator/communication"
 )
 
 // ResponseError is returned when a response was received from the Ingenico ePayments platform which indicates an error.

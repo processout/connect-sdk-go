@@ -6,10 +6,10 @@ package examples
 import (
 	"fmt"
 
-	"github.com/Ingenico-ePayments/connect-sdk-go/domain/definitions"
-	"github.com/Ingenico-ePayments/connect-sdk-go/domain/payment"
-	"github.com/Ingenico-ePayments/connect-sdk-go/domain/refund"
-	sdkErrors "github.com/Ingenico-ePayments/connect-sdk-go/errors"
+	"github.com/processout/connect-sdk-go/domain/definitions"
+	"github.com/processout/connect-sdk-go/domain/payment"
+	"github.com/processout/connect-sdk-go/domain/refund"
+	sdkErrors "github.com/processout/connect-sdk-go/errors"
 )
 
 func refundPaymentExample() {

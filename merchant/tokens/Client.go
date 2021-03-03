@@ -4,11 +4,11 @@
 package tokens
 
 import (
-	"github.com/Ingenico-ePayments/connect-sdk-go/communicator/communication"
-	"github.com/Ingenico-ePayments/connect-sdk-go/domain/errors"
-	"github.com/Ingenico-ePayments/connect-sdk-go/domain/token"
-	sdkErrors "github.com/Ingenico-ePayments/connect-sdk-go/errors"
-	"github.com/Ingenico-ePayments/connect-sdk-go/internal/apiresource"
+	"github.com/processout/connect-sdk-go/communicator/communication"
+	"github.com/processout/connect-sdk-go/domain/errors"
+	"github.com/processout/connect-sdk-go/domain/token"
+	sdkErrors "github.com/processout/connect-sdk-go/errors"
+	"github.com/processout/connect-sdk-go/internal/apiresource"
 )
 
 // Client represents a tokens client. Thread-safe.

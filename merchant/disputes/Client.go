@@ -4,11 +4,11 @@
 package disputes
 
 import (
-	"github.com/Ingenico-ePayments/connect-sdk-go/communicator/communication"
-	"github.com/Ingenico-ePayments/connect-sdk-go/domain/dispute"
-	"github.com/Ingenico-ePayments/connect-sdk-go/domain/errors"
-	sdkErrors "github.com/Ingenico-ePayments/connect-sdk-go/errors"
-	"github.com/Ingenico-ePayments/connect-sdk-go/internal/apiresource"
+	"github.com/processout/connect-sdk-go/communicator/communication"
+	"github.com/processout/connect-sdk-go/domain/dispute"
+	"github.com/processout/connect-sdk-go/domain/errors"
+	sdkErrors "github.com/processout/connect-sdk-go/errors"
+	"github.com/processout/connect-sdk-go/internal/apiresource"
 )
 
 // Client represents a disputes client. Thread-safe.

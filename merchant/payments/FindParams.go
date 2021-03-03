@@ -6,7 +6,7 @@ package payments
 import (
 	"strconv"
 
-	"github.com/Ingenico-ePayments/connect-sdk-go/communicator"
+	"github.com/processout/connect-sdk-go/communicator"
 )
 
 // FindParams represents query parameters for Find payments

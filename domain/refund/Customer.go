@@ -4,8 +4,8 @@
 package refund
 
 import (
-	"github.com/Ingenico-ePayments/connect-sdk-go/domain/definitions"
-	"github.com/Ingenico-ePayments/connect-sdk-go/domain/payment"
+	"github.com/processout/connect-sdk-go/domain/definitions"
+	"github.com/processout/connect-sdk-go/domain/payment"
 )
 
 // Customer represents class RefundCustomer

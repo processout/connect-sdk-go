@@ -3,12 +3,12 @@
 
 package payment
 
-import "github.com/Ingenico-ePayments/connect-sdk-go/domain/definitions"
+import "github.com/processout/connect-sdk-go/domain/definitions"
 
 // LineItem represents class LineItem
 type LineItem struct {
-	AmountOfMoney                *definitions.AmountOfMoney            `json:"amountOfMoney,omitempty"`
-	InvoiceData                  *LineItemInvoiceData                  `json:"invoiceData,omitempty"`
+	AmountOfMoney *definitions.AmountOfMoney `json:"amountOfMoney,omitempty"`
+	InvoiceData   *LineItemInvoiceData       `json:"invoiceData,omitempty"`
 	// Deprecated: Use orderLineDetails instead
 	Level3InterchangeInformation *LineItemLevel3InterchangeInformation `json:"level3InterchangeInformation,omitempty"`
 	OrderLineDetails             *OrderLineDetails                     `json:"orderLineDetails,omitempty"`

@@ -1,6 +1,6 @@
 package webhooks
 
-import "github.com/Ingenico-ePayments/connect-sdk-go/communicator"
+import "github.com/processout/connect-sdk-go/communicator"
 
 // HelperBuilder is used to build Helper objects
 type HelperBuilder struct {

@@ -6,9 +6,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/Ingenico-ePayments/connect-sdk-go/communicator/communication"
-	"github.com/Ingenico-ePayments/connect-sdk-go/configuration"
-	"github.com/Ingenico-ePayments/connect-sdk-go/defaultimpl"
+	"github.com/processout/connect-sdk-go/communicator/communication"
+	"github.com/processout/connect-sdk-go/configuration"
+	"github.com/processout/connect-sdk-go/defaultimpl"
 )
 
 func TestMultipartFormDataUploadPostMultipartFormDataObjectWithResponse(t *testing.T) {

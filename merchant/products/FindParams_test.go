@@ -4,7 +4,7 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/Ingenico-ePayments/connect-sdk-go/communicator"
+	"github.com/processout/connect-sdk-go/communicator"
 )
 
 func TestFindParamsToRequestParameters(t *testing.T) {

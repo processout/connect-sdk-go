@@ -3,7 +3,7 @@
 
 package payment
 
-import "github.com/Ingenico-ePayments/connect-sdk-go/domain/definitions"
+import "github.com/processout/connect-sdk-go/domain/definitions"
 
 // Order represents class Order
 type Order struct {
@@ -11,12 +11,12 @@ type Order struct {
 	AmountOfMoney   *definitions.AmountOfMoney `json:"amountOfMoney,omitempty"`
 	Customer        *Customer                  `json:"customer,omitempty"`
 	// Deprecated: Use shoppingCart.items instead
-	Items           *[]LineItem                `json:"items,omitempty"`
-	References      *OrderReferences           `json:"references,omitempty"`
+	Items      *[]LineItem      `json:"items,omitempty"`
+	References *OrderReferences `json:"references,omitempty"`
 	// Deprecated: Use Merchant.seller instead
-	Seller          *Seller                    `json:"seller,omitempty"`
-	Shipping        *Shipping                  `json:"shipping,omitempty"`
-	ShoppingCart    *ShoppingCart              `json:"shoppingCart,omitempty"`
+	Seller       *Seller       `json:"seller,omitempty"`
+	Shipping     *Shipping     `json:"shipping,omitempty"`
+	ShoppingCart *ShoppingCart `json:"shoppingCart,omitempty"`
 }
 
 // NewOrder constructs a new Order
