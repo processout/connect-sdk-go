@@ -3,6 +3,8 @@
 
 package errors
 
+//go:generate go run ../gen-accessors.go
+
 // ErrorResponse represents class ErrorResponse
 type ErrorResponse struct {
 	ErrorID *string     `json:"errorId,omitempty"`

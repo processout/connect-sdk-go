@@ -63,7 +63,7 @@ func TestCreateConfiguration(t *testing.T) {
 func TestCreateCommunicator(t *testing.T) {
 	marshaller, _ := defaultimpl.NewDefaultMarshaller()
 
-	communicator, err := CreateCommunicator(apiKeyID, secretAPIKey, "Test")
+	communicator, err := CreateCommunicator(apiKeyID, secretAPIKey, "Test", nil)
 	if err != nil {
 		t.Fatalf("TestCreateCommunicator: %v", err)
 	}

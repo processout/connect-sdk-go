@@ -3,6 +3,8 @@
 
 package payment
 
+//go:generate go run ../gen-accessors.go
+
 // Response represents class PaymentResponse
 type Response struct {
 	HostedCheckoutSpecificOutput *HostedCheckoutSpecificOutput `json:"hostedCheckoutSpecificOutput,omitempty"`

@@ -3,6 +3,8 @@
 
 package payment
 
+//go:generate go run ../gen-accessors.go
+
 // FindResponse represents class FindPaymentsResponse
 type FindResponse struct {
 	Limit      *int32     `json:"limit,omitempty"`

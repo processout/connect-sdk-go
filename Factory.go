@@ -4,6 +4,7 @@ import (
 	"github.com/Ingenico-ePayments/connect-sdk-go/communicator"
 	"github.com/Ingenico-ePayments/connect-sdk-go/configuration"
 	"github.com/Ingenico-ePayments/connect-sdk-go/defaultimpl"
+	"net/http"
 )
 
 // CreateConfiguration creates a CommunicatorConfiguration with default settings and the given apiKeyID and secretAPIKey
@@ -20,24 +21,33 @@ func CreateSessionBuilder(apiKeyID, secretAPIKey, integrator string) (*communica
 		return nil, err
 	}
 
-	return CreateSessionBuilderFromConfiguration(configuration)
+	return CreateSessionBuilderFromConfiguration(configuration, nil)
 }
 
 // CreateSessionBuilderFromConfiguration creates a SessionBuilder with the given CommunicatorConfiguration
-func CreateSessionBuilderFromConfiguration(configuration *configuration.CommunicatorConfiguration) (*communicator.SessionBuilder, error) {
+func CreateSessionBuilderFromConfiguration(configuration *configuration.CommunicatorConfiguration, customHTTPClient *http.Client) (*communicator.SessionBuilder, error) {
 	builder, err := communicator.NewSessionBuilder()
 	if err != nil {
 		return nil, err
 	}
 
-	connection, err := defaultimpl.NewDefaultConnection(configuration.SocketTimeout,
-		configuration.ConnectTimeout,
-		configuration.KeepAliveTimeout,
-		configuration.IdleTimeout,
-		configuration.MaxConnections,
-		configuration.Proxy)
-	if err != nil {
-		return nil, err
+	var connection *defaultimpl.DefaultConnection
+	if customHTTPClient != nil {
+		connection, err = defaultimpl.NewDefaultCustomHTTPConnectionConnection(configuration.Proxy, customHTTPClient)
+		if err != nil {
+			return nil, err
+		}
+	} else {
+		connection, err = defaultimpl.NewDefaultConnection(configuration.SocketTimeout,
+			configuration.ConnectTimeout,
+			configuration.KeepAliveTimeout,
+			configuration.IdleTimeout,
+			configuration.MaxConnections,
+			configuration.Proxy,
+		)
+		if err != nil {
+			return nil, err
+		}
 	}
 
 	metaDataProviderBuilder := communicator.NewMetaDataProviderBuilder(configuration.Integrator)
@@ -59,18 +69,18 @@ func CreateSessionBuilderFromConfiguration(configuration *configuration.Communic
 }
 
 // CreateCommunicator creates a Communicator with default settings and the given apiKeyID and secretAPIKey
-func CreateCommunicator(apiKeyID, secretAPIKey, integrator string) (*communicator.Communicator, error) {
+func CreateCommunicator(apiKeyID, secretAPIKey, integrator string, customHTTPClient *http.Client) (*communicator.Communicator, error) {
 	configuration, err := CreateConfiguration(apiKeyID, secretAPIKey, integrator)
 	if err != nil {
 		return nil, err
 	}
 
-	return CreateCommunicatorFromConfiguration(configuration)
+	return CreateCommunicatorFromConfiguration(configuration, customHTTPClient)
 }
 
 // CreateCommunicatorFromConfiguration creates a Communicator with the given CommunicatorConfiguration
-func CreateCommunicatorFromConfiguration(configuration *configuration.CommunicatorConfiguration) (*communicator.Communicator, error) {
-	builder, err := CreateSessionBuilderFromConfiguration(configuration)
+func CreateCommunicatorFromConfiguration(configuration *configuration.CommunicatorConfiguration, customHTTPClient *http.Client) (*communicator.Communicator, error) {
+	builder, err := CreateSessionBuilderFromConfiguration(configuration, customHTTPClient)
 	if err != nil {
 		return nil, err
 	}
@@ -95,7 +105,7 @@ func CreateCommunicatorFromSession(session *communicator.Session) (*communicator
 
 // CreateClient creates a Client with default settings and the given apiKeyID and secretAPIKey
 func CreateClient(apiKeyID, secretAPIKey, integrator string) (*Client, error) {
-	communicator, err := CreateCommunicator(apiKeyID, secretAPIKey, integrator)
+	communicator, err := CreateCommunicator(apiKeyID, secretAPIKey, integrator, nil)
 	if err != nil {
 		return nil, err
 	}
@@ -105,7 +115,7 @@ func CreateClient(apiKeyID, secretAPIKey, integrator string) (*Client, error) {
 
 // CreateClientFromConfiguration creates a Client with the given CommunicatorConfiguration
 func CreateClientFromConfiguration(configuration *configuration.CommunicatorConfiguration) (*Client, error) {
-	communicator, err := CreateCommunicatorFromConfiguration(configuration)
+	communicator, err := CreateCommunicatorFromConfiguration(configuration, nil)
 	if err != nil {
 		return nil, err
 	}
@@ -126,4 +136,37 @@ func CreateClientFromSession(session *communicator.Session) (*Client, error) {
 // CreateClientFromCommunicator creates a Client with the given Communicator
 func CreateClientFromCommunicator(communicator *communicator.Communicator) (*Client, error) {
 	return NewClient(communicator)
+}
+
+// ProcessOut specific changes
+
+// CreateCustomHTTPClient creates a Client with default settings and the given apiKeyID and secretAPIKey using the customer HTTP
+// client that is sent in
+func CreateCustomHTTPClient(apiKeyID, secretAPIKey, integrator, endpointHost string, customHTTPClient *http.Client) (*Client, error) {
+	communicator, err := CreateCustomCommunicator(apiKeyID, secretAPIKey, integrator, endpointHost, customHTTPClient)
+	if err != nil {
+		return nil, err
+	}
+
+	return CreateClientFromCommunicator(communicator)
+}
+
+// CreateCustomCommunicator creates a Communicator with default settings and the given apiKeyID and secretAPIKey
+// With a custom HTTP client and endpointHost.
+func CreateCustomCommunicator(apiKeyID, secretAPIKey, integrator string, endpointHost string, customHTTPClient *http.Client) (*communicator.Communicator, error) {
+	configuration, err := CreateCustomConfiguration(apiKeyID, secretAPIKey, integrator, endpointHost)
+	if err != nil {
+		return nil, err
+	}
+
+	return CreateCommunicatorFromConfiguration(configuration, customHTTPClient)
+}
+
+// CreateCustomConfiguration creates a CommunicatorConfiguration with default settings and the given apiKeyID and secretAPIKey.
+// This allows us to
+func CreateCustomConfiguration(apiKeyID, secretAPIKey, integrator, endpointHost string) (*configuration.CommunicatorConfiguration, error) {
+	newConf := configuration.DefaultConfiguration(apiKeyID, secretAPIKey, integrator)
+	newConf.APIEndpoint.Host = endpointHost
+
+	return &newConf, nil
 }

@@ -3,6 +3,8 @@
 
 package services
 
+//go:generate go run ../gen-accessors.go
+
 // GetIINDetailsResponse represents class GetIINDetailsResponse
 type GetIINDetailsResponse struct {
 	CoBrands           *[]IINDetail `json:"coBrands,omitempty"`

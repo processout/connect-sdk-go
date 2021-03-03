@@ -8,6 +8,8 @@ import (
 	"github.com/Ingenico-ePayments/connect-sdk-go/domain/token"
 )
 
+//go:generate go run ../gen-accessors.go
+
 // Event represents an event that is sent by webhooks
 type Event struct {
 	APIVersion *string           `json:"apiVersion,omitempty"`

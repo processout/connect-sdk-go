@@ -3,6 +3,8 @@
 
 package payment
 
+//go:generate go run ../gen-accessors.go
+
 // CancelResponse represents class CancelPaymentResponse
 type CancelResponse struct {
 	CardPaymentMethodSpecificOutput   *CancelPaymentCardPaymentMethodSpecificOutput   `json:"cardPaymentMethodSpecificOutput,omitempty"`

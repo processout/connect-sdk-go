@@ -3,6 +3,8 @@
 
 package services
 
+//go:generate go run ../gen-accessors.go
+
 // IINDetail represents class IINDetail
 type IINDetail struct {
 	IsAllowedInContext *bool  `json:"isAllowedInContext,omitempty"`

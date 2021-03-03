@@ -3,6 +3,8 @@
 
 package errors
 
+//go:generate go run ../gen-accessors.go
+
 // APIError represents class APIError
 type APIError struct {
 	Category       *string `json:"category,omitempty"`

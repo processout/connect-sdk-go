@@ -3,6 +3,8 @@
 
 package refund
 
+//go:generate go run ../gen-accessors.go
+
 // RefundsResponse represents class RefundsResponse
 type RefundsResponse struct {
 	Refunds *[]Result `json:"refunds,omitempty"`

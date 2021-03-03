@@ -5,6 +5,8 @@ package payment
 
 import "github.com/Ingenico-ePayments/connect-sdk-go/domain/errors"
 
+//go:generate go run ../gen-accessors.go
+
 // ErrorResponse represents class PaymentErrorResponse
 type ErrorResponse struct {
 	ErrorID       *string            `json:"errorId,omitempty"`

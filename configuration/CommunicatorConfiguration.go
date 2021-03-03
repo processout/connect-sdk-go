@@ -49,7 +49,7 @@ type CommunicatorConfiguration struct {
 var defaultConfiguration = CommunicatorConfiguration{
 	APIEndpoint: url.URL{
 		Scheme: "https",
-		Host:   "world.api-ingenico.com",
+		Host:   "eu.sandbox.api-ingenico.com",
 	},
 	ConnectTimeout:    5 * time.Second,
 	SocketTimeout:     30 * time.Second,

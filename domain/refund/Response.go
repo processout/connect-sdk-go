@@ -8,6 +8,8 @@ import (
 	"github.com/Ingenico-ePayments/connect-sdk-go/domain/payment"
 )
 
+//go:generate go run ../gen-accessors.go
+
 // Response represents class RefundResponse
 type Response struct {
 	ID           *string                        `json:"id,omitempty"`
